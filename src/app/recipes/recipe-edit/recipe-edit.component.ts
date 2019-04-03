@@ -101,6 +101,10 @@ export class RecipeEditComponent implements OnInit {
     (<FormArray> this.recipeForm.get('ingredients')).removeAt(i);
 
   }
+
+  getControls() {
+    return (<FormArray>this.recipeForm.get('ingredients')).controls;
+  }
 }
 
 
